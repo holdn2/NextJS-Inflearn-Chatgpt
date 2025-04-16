@@ -2,7 +2,7 @@ export default async function Card() {
   const response = await fetch("http://localhost:3000/api/test");
   const data = await response.json();
 
-  console.log("data ", data);
+  console.log("card data ", data);
 
   return (
     <div
