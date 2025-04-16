@@ -23,9 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // 루트 layout의 경우 html태그와 body태그를 필수로 넣어주어야 한다.
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        루트 레이아웃 {children}
       </body>
     </html>
   );
